@@ -3,7 +3,7 @@ from newsapi import NewsApiClient
 
 app = Flask(__name__)
 
-@app.ruote('/')
+@app.route('/')
 def index():
     newsapi =NewsApiClient(api_key='6e766d66ef3d492ca4ffe25ebfbfa61e')
     topheadlines=newsapi.get_top_headlines(sources='bbc-news')
@@ -22,7 +22,7 @@ def index():
         
         my_list=zip(des,image,news)
         
-        return render_template('index.html', context = my_list)
+        return render_template('index.htm', context = my_list)
         
         
     
