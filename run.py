@@ -11,6 +11,7 @@ def index():
     
     des=[]
     image=[]
+    news[]
     
 
 
