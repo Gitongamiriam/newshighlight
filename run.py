@@ -13,6 +13,8 @@ def index():
     image=[]
     news[]
     
+    for i in range(len(articles)):
+    
 
 
 if __name__=='__main__':
