@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <div class=jumbotron>
+    <div class="jumbotron text-center">
         <h1><strong>Latests News</strong></h1>
     </div>
-    {% for new, img, des, pubAt,url in context%} 
-    <img src="{{img}}" alt="">
-    <h3>News: </h3>
-    <p>{{new}}</p>
-    <h4>Description</h4>
-    <p>{{des}}</p>
-    <h4>Published at</h4>
-    <p>{{pubAt}}</p>
-    <a href="{{url}}" target="_blank" class="btn btn-outline-dark">Read More</a>
+    <div class="container">
+        {% for new, img, des, pubAt, url in context%} 
+        <img src="{{img}}" alt="">
+        <h3>News: </h3>
+        <p>{{new}}</p>
+        <h4>Description</h4>
+        <p>{{des}}</p>
+        <h4>Published at</h4>
+        <p>{{pubAt}}</p>
+        <p><a href="{{url}}" target="_blank" class="btn btn-outline-danger">Read More</a></p>
 
-    {%endfor%}
+        {%endfor%}
+    </div>
 
 </body>
 </html>
