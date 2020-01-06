@@ -22,6 +22,8 @@ def index():
         
         my_list=zip(des,image,news)
         
+        return render_template('index.html', context = my_list)
+        
         
     
 
