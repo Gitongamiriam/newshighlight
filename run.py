@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     newsapi =NewsApiClient(api_key='6e766d66ef3d492ca4ffe25ebfbfa61e')
     topheadlines=newsapi.get_top_headlines(sources='bbc-news')
-    articles
+    articles=topheadlines['articles']
 
 
 if __name__=='__main__':
