@@ -1,4 +1,6 @@
 from flask import Flask, render_template
 from newsapi import NewsApiClient
 
-    app.run()l
+
+if __name__=='__main__':
+    app.run(debug =True)
