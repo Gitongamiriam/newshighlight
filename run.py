@@ -13,6 +13,7 @@ def index():
     image=[]
     news=[]
     pubAt=[]
+    url= []
     
     for i in range(len(articles)): 
         myarticles=articles[i]
@@ -21,8 +22,9 @@ def index():
         image.append(myarticles['urlToImage'])
         des.append(myarticles['description'])
         pubAt.append(myarticles['publishedAt'])
+        url.append(myarticles['url'])
         
-    my_list=zip(des,image,news,pubAt)
+    my_list=zip(des,image,news,pubAt,url)
         
     return render_template('index.htm', context = my_list)
         

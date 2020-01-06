@@ -7,14 +7,17 @@
     <title>News Briefing Gallore</title>
 </head>
 <body>
-    {% for new, img, des, pubAt in context%} 
+    <h1>Emerging News</h1>
+    {% for new, img, des, pubAt,url in context%} 
     <img src="{{img}}" alt="">
     <h3>News: </h3>
     <p>{{new}}</p>
     <h4>Description</h4>
     <p>{{des}}</p>
-    <h5>Published at</h5>
+    <h4>Published at</h4>
     <p>{{pubAt}}</p>
+    <a href="{{url}}" target="_blank" class="btn-primary">Read More</a>
+
     {%endfor%}
 
 </body>
