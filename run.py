@@ -17,6 +17,8 @@ def index():
         myarticles=articles[i]
         
         news.append(myarticles['title'])
+        image.append(myarticles['urlToImage'])
+        
     
 
 
