@@ -13,7 +13,10 @@ def index():
     image=[]
     news[]
     
-    for i in range(len(articles)):
+    for i in range(len(articles)): 
+        myarticles=articles[i]
+        
+        news.append(myarticles['title'])
     
 
 
