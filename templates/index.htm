@@ -7,12 +7,14 @@
     <title>News Briefing Gallore</title>
 </head>
 <body>
-    {% for new, img, des in context%} 
+    {% for new, img, des, pubAt in context%} 
     <img src="{{img}}" alt="">
     <h3>News: </h3>
     <p>{{new}}</p>
     <h4>Description</h4>
     <p>{{des}}</p>
+    <h5>Published at</h5>
+    <p>{{pubAt}}</p>
     {%endfor%}
 
 </body>
