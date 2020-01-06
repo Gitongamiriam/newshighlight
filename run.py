@@ -18,6 +18,8 @@ def index():
         
         news.append(myarticles['title'])
         image.append(myarticles['urlToImage'])
+        des.append(myarticles['description'])
+        
         
     
 
