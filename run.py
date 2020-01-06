@@ -20,6 +20,8 @@ def index():
         image.append(myarticles['urlToImage'])
         des.append(myarticles['description'])
         
+        my_list=zip(des,image,news)
+        
         
     
 
