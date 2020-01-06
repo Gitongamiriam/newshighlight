@@ -11,7 +11,7 @@ def index():
     
     des=[]
     image=[]
-    news[]
+    news=[]
     
     for i in range(len(articles)): 
         myarticles=articles[i]
